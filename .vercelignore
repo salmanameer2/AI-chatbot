@@ -1,0 +1,10 @@
+# Never upload local secrets when deploying with the Vercel CLI.
+.env
+.env.*
+
+# Local-only assets and checks
+node_modules/
+*.log
+test/
+scripts/
+chatbot design reference.jpg

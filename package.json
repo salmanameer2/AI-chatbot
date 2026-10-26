@@ -1,0 +1,30 @@
+{
+  "name": "free-ai-chatbot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chat with AI using Groq free-plan models, with a small Express backend that keeps the API key private.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check models.js && node --check public/script.js && node --check scripts/verify-models.js",
+    "test": "node --test",
+    "verify:models": "node scripts/verify-models.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "keywords": [
+    "chatbot",
+    "groq",
+    "free-models",
+    "express"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1"
+  }
+}
